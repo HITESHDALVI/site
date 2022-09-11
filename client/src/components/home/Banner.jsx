@@ -48,7 +48,9 @@ const Banner = () => {
             itemClass="carousel-item-padding-40-px">
          {
                 bannerData.map(image => (
+                    <div key={image.id}>
                     <Image src={image.url} alt="banner" id={image.id} />
+                    </div>
                 ))
             }
     </Carousel>
