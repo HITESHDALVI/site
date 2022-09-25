@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CustomButtons from './CustomButtons';
 import Search from './Search';
 import { Menu } from '@mui/icons-material';
-import AMFashion from "../images/AMFashion.png"
+import AMFashion from "../images/Amfashion.png"
 
 const StyledHeader = styled(AppBar)`
     background: #8aa5ff;
