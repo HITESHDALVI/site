@@ -7,7 +7,7 @@ import { Menu } from '@mui/icons-material';
 import AMFashion from "../images/Amfashion.png"
 
 const StyledHeader = styled(AppBar)`
-    background: #8aa5ff;
+    background:  #7aadff;
     height: 70px;
 `;
 const Component = styled(Link)`
