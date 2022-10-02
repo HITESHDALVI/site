@@ -7,7 +7,7 @@ import { Menu } from '@mui/icons-material';
 import AMFashion from "../images/Amfashion.png"
 
 const StyledHeader = styled(AppBar)`
-    background:  #7aadff;
+    background: #ffcd4f;
     height: 70px;
 `;
 const Component = styled(Link)`
@@ -34,7 +34,6 @@ const CustomButtonWrapper = styled(Box)(({ theme }) => ({
 
 const Header = () => {
   const logoURL = AMFashion;
-  // const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
 
 
   const [open, setOpen] = useState(false);
