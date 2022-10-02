@@ -2,7 +2,7 @@ import React, { useState,useContext} from 'react';
 import { Dialog, DialogContent, TextField, Box, Button, Typography, styled } from '@mui/material';
 import {  authenticateLogin,authenticateSignup } from '../service/api.js';
 import {DataContext} from '../../context/DataProvider'
-
+import loginImg from "../images/loginImg.png"
 const Component = styled(DialogContent)`
     height: 70vh;
     width: 90vh;
@@ -10,7 +10,9 @@ const Component = styled(DialogContent)`
     padding-top: 0;
 `;
 const Image = styled(Box)`
-    background: #2874f0 url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png) center 85% no-repeat;
+    background: #7aadff ;
+    background-image:url('../images/loginImg.png');
+    // background-size:85%;
     width: 25%;
     height: 80%;
     padding: 45px 35px;
@@ -65,7 +67,12 @@ const Error = styled(Typography)`
     margin-top: 10px;
     font-weight: 600;
 `
-
+const loginStyle={
+    width: '135%',
+    height: '55%',
+    marginLeft: '-2rem',
+    marginTop:'5rem',
+}
 const loginInitialValues = {
     username: '',
     password: ''
@@ -141,6 +148,7 @@ const LoginDialog = ({ open, setOpen }) => {
                     <Image>
                         <Typography variant="h5">{account.heading}</Typography>
                         <Typography style={{ marginTop: 20 }}>{account.subHeading}</Typography>
+                        <img src={loginImg} style={loginStyle}/>
                     </Image>
                     {  
                       account.view === 'login' ? 
