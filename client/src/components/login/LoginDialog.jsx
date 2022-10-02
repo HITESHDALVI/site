@@ -10,11 +10,11 @@ const Component = styled(DialogContent)`
     padding-top: 0;
 `;
 const Image = styled(Box)`
-    background: #7aadff ;
-    background-image:url('../images/loginImg.png');
-    // background-size:85%;
+    background: #ffcd4f;
+    // background-image:url('../images/loginImg.png');
     width: 25%;
     height: 80%;
+    margin-top: 13px;
     padding: 45px 35px;
     & > p, & > h5 {
         color: #FFFFFF;
@@ -33,10 +33,10 @@ const Wrapper = styled(Box)`
 `;
 const LoginButton = styled(Button)`
     text-transform: none;
-    background: #FB641B;
+    background: #2874f0;
     color: #fff;
-    height: 48px;
-    border-radius: 2px;
+    height: 40px;
+    border-radius: 5px;
 `;
 
 const RequestOTP = styled(Button)`
@@ -44,7 +44,8 @@ const RequestOTP = styled(Button)`
     background: #fff;
     color: #2874f0;
     height: 48px;
-    border-radius: 2px;
+    border: 1px #2874f0;
+    border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 `;
 const Text = styled(Typography)`
@@ -56,7 +57,7 @@ const CreateAccount = styled(Typography)`
     text-align: center;
     color: #2874f0;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer
 `
 
