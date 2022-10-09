@@ -5,12 +5,12 @@ import MobileImg from "../images/MobileImg.png";
 import TopOffersImg from "../images/TopOffersImg.png";
 import FashionImg from "../images/FashionImg.jpg";
 import SmartPhoneImg from "../images/SmartPhoneImg.png";
-
+import FashionNewImg from "../images/FashionNewImg.png";
 
 export const navData = [
     { url: TopOffersImg , text: 'Top Offers' },
     { url: SmartPhoneImg , text: 'Mobile' },
-    { url: FashionImg , text: 'Fashion' },
+    { url: FashionNewImg , text: 'Fashion' },
     { url: ElectronicsImg , text: 'Electronics' },
     { url: furniturImg , text: 'Home' },
     { url: homeAppliances , text: 'Appliances' },
