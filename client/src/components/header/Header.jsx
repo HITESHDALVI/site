@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CustomButtons from './CustomButtons';
 import Search from './Search';
 import { Menu } from '@mui/icons-material';
-import AMFashion from "../images/Amfashion.png"
+import AmfashionLogoImg from "../images/AmfashionLogoImg.png"
 
 const StyledHeader = styled(AppBar)`
     background: #ffcd4f;
@@ -33,7 +33,7 @@ const CustomButtonWrapper = styled(Box)(({ theme }) => ({
 
 
 const Header = () => {
-  const logoURL = AMFashion;
+  const logoURL = AmfashionLogoImg.png;
 
 
   const [open, setOpen] = useState(false);
@@ -69,7 +69,7 @@ const Header = () => {
           {list()}
         </Drawer>
         <Component to='/'>
-          <img src={AMFashion} alt="none" style={{ height: '60px',
+          <img src={AmfashionLogoImg} alt="none" style={{ height: '60px',
           width:' 190px',
           margin: '5px',}} />
         </Component>
