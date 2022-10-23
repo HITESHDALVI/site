@@ -13,7 +13,7 @@
 */
 .footer-body {
   background: linear-gradient(to bottom, #ededed, #b7c8ff) no-repeat fixed;
-  padding: 1rem 3rem;
+  padding: 0.5rem;
   margin: 0;
   box-sizing: border-box;
   font-family: open sans;
@@ -25,15 +25,15 @@
 } 
 ul{
  list-style-type: none;
- margin-block-start: 1em;
- margin-block-end: 1em;
+ margin-block-start: 0em;
+ margin-block-end: 0em;
  margin-inline-start: 0px;
  margin-inline-end: 0px;
  padding-inline-start: 0px;
 }
 .footerCon{
-    background: #1e3161;
-    border-radius: 15px;
+    background: #282722;
+    /* border-radius: 15px; */
     box-shadow: #2f4374 0 10px 20px 5px;
     padding: 5px 30px;
     display: flex;
@@ -46,17 +46,19 @@ ul{
 .about-sec-con{
   text-decoration: none;
     padding: 3px 10px;
-    font-size: 18px;
+    font-size: 14px;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    margin: 4px;
 }
 .about-sec-con2{
   text-decoration: none;
   padding-top: -10px;
     padding: 3px 10px;
-    font-size: 18px;
+    font-size: 14px;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    margin: 4px;
 }
 .main {
   width: 100%;
@@ -65,9 +67,10 @@ ul{
   flex-wrap: wrap;
 }
 .heading {
-  margin-bottom: 15px;
-  font-size: 1.5em;
-
+  margin: 15px 0;
+  font-size: 1.2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .header-underline{
     width:97px;
@@ -78,14 +81,17 @@ ul{
 .col1 {
   flex: 1;
   min-width: 200px;
+  margin-top: 4px;
 }
 .col2 {
   flex: 1;
   min-width: 300px;
+  margin-top: 4px;
 }
 .col3 {
   flex: 1;
   min-width: 200px;
+  margin-top: 4px;
 }
 .about-list{
   text-decoration: none;
@@ -125,6 +131,7 @@ ul{
 .social {
   display: flex;
   gap: 20px;
+  margin: 4px;
 }
 .social a{
   color: white;
@@ -142,6 +149,8 @@ ul{
   gap: 20px;
   font-size: 12px;
   color: white;
+  margin-block-start: 4px;
+  margin-block-end: 4px;
 }
 .terms a{
   color:white;
@@ -154,12 +163,8 @@ ul{
     margin: 0;
   } 
   .footerCon{
-      /* background: #1e3161; */
       border-radius: 0;
       align-items: flex-start;
-      /* box-shadow: #2f4374 0 10px 20px 5px;
-      color: white;
-      overflow-x: hidden; */
   }
   .terms{
     display: flex;
