@@ -62,11 +62,11 @@ const CreateAccount = styled(Typography)`
 `
 
 const Error = styled(Typography)`
-    font-size: 20px;
+    font-size: 12px;
     color: #ff6161;
     line-height: 0;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 500;
 `
 const loginStyle={
     width: '135%',
@@ -75,14 +75,12 @@ const loginStyle={
     marginTop:'5rem',
 }
 const loginInitialValues = {
-    username: '',
+    email: '',
     password: ''
 };
 
 const signupInitialValues = {
-    firstname: '',
-    lastname: '',
-    username: '',
+    name: '',
     email: '',
     password: '',
     phone: ''
@@ -129,7 +127,7 @@ const LoginDialog = ({ open, setOpen }) => {
         let response = await authenticateLogin(login);
         if(response.status === 200) {
             handleClose();
-            setAccount(response.data.data.firstname);
+            setAccount(response.data.data.name);
         }
         else {
             setError(true);
@@ -140,7 +138,7 @@ const LoginDialog = ({ open, setOpen }) => {
         let response = await authenticateSignup(signup);
         if(!response) return;
         handleClose();
-        setAccount(signup.firstname);
+        setAccount(signup.name);
     }
     return (
         <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { maxWidth: 'unset' } }}>
@@ -154,8 +152,8 @@ const LoginDialog = ({ open, setOpen }) => {
                     {  
                       account.view === 'login' ? 
                         <Wrapper>
-                            <TextField variant="standard" onChange={(e) => onValueChange(e)} name='username' label="Enter UserName" />
-                            { error && <Error>Please enter valid UserName</Error> }
+                            <TextField variant="standard" onChange={(e) => onValueChange(e)} name='email' label="Enter Email" />
+                            { error && <Error>Please enter valid Email</Error> }
                             <TextField variant="standard" onChange={(e) => onValueChange(e)} name='password' label="Enter Password" />
                             <Text>By continuing, you agree to  AMFashion's Terms of Use and Privacy Policy.</Text>
                             <LoginButton onClick={() => loginUser()} >Login</LoginButton>
@@ -165,13 +163,13 @@ const LoginDialog = ({ open, setOpen }) => {
                         </Wrapper>
                         :
                         <Wrapper>
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='firstname' label="Enter FirstName" />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='lastname' label="Enter LastName" />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='username' label="Enter UserName" />
+                            <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='name' label="Enter Full Name" />
                             <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='email' label="Enter  Email" />
                             <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='password'label="Enter Password" />
                             <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='phone' label="Enter Mobile Number" />
-                            <LoginButton onClick={() => signupUser()}>Let's Shop</LoginButton>
+                            {/* <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='lastname' label="Enter LastName" />
+                            <TextField variant="standard" onChange={(e) => onInputChange(e)}  name='username' label="Enter UserName" /> */}
+                            <LoginButton onClick={() => signupUser()}>Explore Now</LoginButton>
                         </Wrapper>
                     }
                 </Box>
