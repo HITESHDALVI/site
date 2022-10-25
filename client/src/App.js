@@ -12,6 +12,7 @@ import About from './components/OtherPage/About';
 import ContactPage from './components/OtherPage/ContactPage';
 import FAQPage from './components/OtherPage/FAQPage';
 import ReturnPolicy from './components/OtherPage/ReturnPolicy';
+import CategoryDetail from './components/details/CategoryDetail';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path= '/ContactUs' element={<ContactPage />} />
           <Route path= '/FAQ' element={<FAQPage />} />
           <Route path= '/ReturnPolicy' element={<ReturnPolicy />} />
+          <Route path="/CategoryDetail" element={<CategoryDetail />} />
           </Routes>
         </Box>
       </BrowserRouter>
