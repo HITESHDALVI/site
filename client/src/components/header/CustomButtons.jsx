@@ -7,6 +7,7 @@ import {DataContext} from '../../context/DataProvider';
 import Profile from './profile';
 import {Link} from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
 
 
 const Container = styled(Link)(({ theme }) => ({
@@ -69,7 +70,7 @@ const CusttomButtons = () => {
       <Typography style={{ marginTop: 3 ,marginLeft: 25 }}>More</Typography>
       <Container to="/cart">
         <Badge badgeContent={cartItems?.length} color="secondary">
-                    <ShoppingCart />
+                    <LocalMallRoundedIcon />
                 </Badge>
          <Typography style={{ marginLeft: 10 }}>Cart</Typography>
       </Container>
